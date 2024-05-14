@@ -1,0 +1,18 @@
+.wrap {
+    .bigView {
+        .bigimg {
+            h2 {
+                position: absolute;
+                left: 20px;top: 20px;
+                font-size: 35px;
+                font-weight: 700;
+                text-shadow: 0 0 0.5em #000;
+            }
+            img {
+                width: var(--mwidth);height: 400px;
+                object-fit: contain;
+                object-position: center center;
+            }
+        }
+    }
+}

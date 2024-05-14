@@ -1,0 +1,14 @@
+.wrap {
+    .bigView {
+        .list {
+            padding: 0;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            li {
+                margin: auto 5px;
+            }
+        }
+    }
+}

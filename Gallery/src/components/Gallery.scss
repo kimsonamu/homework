@@ -1,0 +1,18 @@
+:root {
+    --mwidth:500px;
+}
+.wrap {
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    .bigView {
+        width: var(--mwidth);
+        border: 1px solid #000;
+    }
+    .info {
+        border: 1px solid #000;
+        width: var(--mwidth);
+        box-sizing: border-box;
+        padding: 30px;
+    }
+}
