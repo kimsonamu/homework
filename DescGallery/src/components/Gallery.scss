@@ -1,0 +1,21 @@
+:root {
+    --gWrpWdt: 100%;
+    --gHalfWid: calc(var(--gWrpWdt) / 2);
+    --gBdColor: #111;
+    --blnk20: 20px;
+}
+.wrap {
+    width: var(--gWrpWdt);
+    display: flex;
+    justify-content: center;
+    & > div {
+        box-sizing: border-box;
+        padding: var(--blnk20);
+    }
+    .viewer {
+        width: var(--gHalfWid);
+    }
+    .list {
+        width: var(--gHalfWid);
+    }
+}

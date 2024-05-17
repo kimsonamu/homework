@@ -1,0 +1,32 @@
+.wrap {
+    .list {
+        dl {
+            width: 100%;
+            margin-top: 50px;
+            dt {
+                height: 50px;
+                border-bottom: 1px solid var(--gBdColor);
+                font-size: 25px;
+                text-indent: var(--blnk20);
+                cursor: pointer;
+                &.on {
+                    background-image: linear-gradient(var(--gDkBgCol,#fff) 20%,#999);
+                    border-radius: 15px;
+                    border-bottom: 1px solid transparent;
+                }
+            }
+            dd {
+                box-sizing: border-box;
+                border-bottom: 1px solid var(--gBdColor);
+                height: 0;opacity: 0;
+                transition-property: height,opacity,padding;
+                transition-duration: 0.4s;
+                &.on {
+                    padding: var(--blnk20);
+                    height: 100px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
