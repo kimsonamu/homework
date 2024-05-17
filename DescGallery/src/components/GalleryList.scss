@@ -9,10 +9,17 @@
                 font-size: 25px;
                 text-indent: var(--blnk20);
                 cursor: pointer;
+                position: relative;
+                svg {
+                    position: absolute;top: 50%;right: var(--blnk20);transform: translateY(-50%);
+                    transition-property: transform;
+                    transition-duration: 0.4s;
+                }
                 &.on {
                     background-image: linear-gradient(var(--gDkBgCol,#fff) 20%,#999);
                     border-radius: 15px;
                     border-bottom: 1px solid transparent;
+                    svg {transform:rotate(-90deg) translateX(10px);}
                 }
             }
             dd {
