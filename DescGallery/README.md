@@ -1,8 +1,18 @@
-# React + Vite
+# 설명리스트를 곁들인 갤러리
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 2024-05-18
+- https://kimsonamu.github.io/homework/DescGallery/dist/
+- 기능 : Image thumbnail 선택시 해당 이미지 뷰 + 설명 title 클릭시 해당 이미지 뷰
+- 트리구조
+```
+├── assets
+│   └── api
+│       └── imgInfoList.js
+├── components
+│   └── Gallery.jsx, .scss
+│          ├── GalleryViewer.jsx, .scss
+│          │        └──GalleryItem.jsx
+│          └── GalleryList.jsx, .scss
+│                   └──GalleryListItem.jsx
+└── App.jsx
+```
