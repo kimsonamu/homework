@@ -5,6 +5,7 @@
 - 기능 : Image thumbnail 선택시 해당 이미지 뷰 + 설명 title 클릭시 해당 이미지 뷰
 - 트리구조
 ```
+Root
 ├── assets
 │   └── api
 │       └── imgInfoList.js
