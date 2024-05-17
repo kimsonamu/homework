@@ -3,10 +3,10 @@ import GalleryItem from './GalleryItem';
 import { SlArrowLeft,SlArrowRight } from "react-icons/sl";
 import PropTypes from 'prop-types';
 
-const GalleryViewer = ({ data, fSetImg, curData,nMxCnt }) => {
+const GalleryViewer = ({ data, fSetImg, curData }) => {
     const { bimg, title,id } = curData;
     function fUptImg(flag) {
-        let num = id -1 <=0 && flag < 0 ? nMxCnt : id -1;
+        let num = id -1 <=0 && flag < 0 ? data.length : id -1;
         fSetImg(num + flag);
     }
     return (
@@ -14,7 +14,7 @@ const GalleryViewer = ({ data, fSetImg, curData,nMxCnt }) => {
             <div className="bimg-view">
                 <h2>{title}</h2>
                 <span>
-                    {id} / {nMxCnt}
+                    {id} / {data.length}
                 </span>
                 <img src={bimg} alt={title} />
             </div>
@@ -36,6 +36,5 @@ GalleryViewer.propTypes = {
     data: PropTypes.any,
     fSetImg: PropTypes.func,
     curData: PropTypes.object,
-    nMxCnt: PropTypes.number,
 };
 export default GalleryViewer;
