@@ -1,0 +1,90 @@
+.shopping {
+    $bdstyle: 1px solid silver;
+    .cart-list {
+        display: none;
+        text-align: center;
+        width: var(--nTlWdt);
+        margin-top: var(--nPdWdt);
+        table {
+            width: 100%;
+            .w1 {
+                width: 500px;
+            }
+            .w2 {
+                width: auto;
+            }
+            .w3 {
+                width: 100px;
+            }
+            .w3 {
+                width: 200px;
+            }
+            thead {
+                height: 50px;
+                font-size: 24px;
+                th {
+                    font-weight: 500;
+                    &:first-child {
+                        text-align: left;
+                        text-indent: var(--nPdWdt);
+                    }
+                }
+            }
+            tbody {
+                td {
+                    box-sizing: border-box;
+                    border-top: $bdstyle;
+                    border-bottom: $bdstyle;
+                    font-size: var(--nPdWdt);
+                    line-height: 70px;
+                    height: 70px;
+                    button {
+                        margin-right: var(--nPdWdt);
+                        vertical-align: middle;
+                        width: 80px;
+                        font-size: 16px;
+                        height: 50px;
+                    }
+                    &:first-child {
+                        border-left: $bdstyle;
+                        text-align: left;
+                        padding-left: var(--nPdWdt);
+                    }
+                    &:last-child {
+                        border-right: $bdstyle;
+                    }
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 10px;
+                        vertical-align: middle;
+                    }
+                    input[type='number'] {
+                        width: 80px;
+                        text-align: center;
+                    }
+                }
+            }
+            tfoot {
+                td {
+                    height: 70px;
+                    padding-top: var(--nPdWdt);
+                    text-align: right;
+                    font-size: 30px;
+                }
+            }
+            button {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        &.on {
+            display: block;
+        }
+        button {
+            width: 200px;
+            height: 70px;
+            font-size: 30px;
+        }
+    }
+}
