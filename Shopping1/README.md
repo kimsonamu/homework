@@ -1,6 +1,6 @@
 # 장바구니
 
--   https://kimsonamu.github.io/homework/shopping1/dist/
+-   https://kimsonamu.github.io/homework/Shopping1/dist/
 -   기능 : 장바구니 담기 및 수정
 -   트리구조
 
