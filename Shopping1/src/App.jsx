@@ -11,7 +11,7 @@ function App() {
     const [bViewCart, setBViewCart] = useState(false);
     const [bPopup, setBPopup] = useState(false);
     const [text, setText] = useState('');
-    const no = useRef(cart.length);
+    const no = useRef(cart.length > 0 ? cart[cart.length-1].id:1);
     useEffect(() => {
         localStorage.setItem('cart', JSON.stringify(cart));
     }, [cart]);

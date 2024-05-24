@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const CartItem = ({ curData, onAddCart, cart }) => {
     const { id, price, title } = curData;
@@ -6,6 +6,9 @@ const CartItem = ({ curData, onAddCart, cart }) => {
     i = i === undefined ? -1 : i.amount;
     const [count, setCount] = useState(i > 0 ? i : 1);
     // if(count !== i) setCount(i > 0 ? i : 1);
+    useEffect(()=>{
+        setCount(i > 0 ? i : 1);
+    },[curData])
     let objCurData = { num: id, amount: count };
     const onChngInput = (e) => {
         const { name, value } = e.target;
